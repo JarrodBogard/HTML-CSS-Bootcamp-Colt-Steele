@@ -566,4 +566,88 @@ But then I start scrolling and it moves around.
 It is not fixed in place, whereas if I set it to be fixed, it is well fixed.
 // Lesson 155. Positioning Exercise #1
 // Lesson 156. Positioning Exercise #2
+
+So this is the box that's blue position.
+
+And then I want it to be absolutely positioned.
+
+And that means if I start to do something like top of zero or let's do right zero.
+
+By default that's going to be positioned relative that right edge is relative to the right edge of the
+
+route HTML element because there was no nearest positioned ancestor.
+
+Such a mouthful to explain all of that, but I want it to be positioned relative to the red box.
+
+So that means I need to give the container a position value, any value that is not static.
+
+And I'm going to do relative because I don't want it to move.
+
+I want it to stay where it is.
+
+But now the right edge of the blue box is aligned to the right edge of the red box because it's absolutely
+
+positioned.
+
+And that looks for the nearest ancestor that has a position value.
+
+And our container now has a position value, which is relative OC.
+
+
+So right now, right of Zero aligns it perfectly.
+
+If I did right of 30 pixels, it's offset 30 pixels from the right.
+
+So I want to go negative.
+
+But -30 is not the right number.
+
+I wanted to go halfway over the width of this blue box, and that box is 100 pixels.
+
+So I'm going to offset it by -50 pixels.
+
+And now it's halfway straddling in the red box or on top of the red box, and then over the edge of
+
+the red box.
+
+And then I want to center it vertically on this red box.
+
+So I need to use top or bottom.
+
+And if I did something like top and I offset it by 100 pixels, that's in the right direction.
+
+But what's the actual value that I want it to be offset by?
+
+Because I'm not offsetting the center here by 100 pixels, I'm offsetting this the top edge.
+
+So this right here is 100 pixels.
+
+Now the red box is 400 pixels.
+
+So I could offset it by 200.
+
+That's halfway.
+
+But that still isn't correct because it doesn't take into account the width of this box.
+
+Right.
+
+It's 200 pixels here.
+
+And this is technically the center of the red box on this vertical line.
+
+But I want the center of the blue box to be right there.
+
+So 200 pixels is too much.
+
+I need to then take into account the height of the blue box.
+
+That's 100 pixels.
+
+So I need to subtract half of that, which would give me 150.
+
+And there we are.
+
+It's perfectly centered.
+
 // Lesson 157. Positioning Exercise #3
